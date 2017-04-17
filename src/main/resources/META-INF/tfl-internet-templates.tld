@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+    <description>Provides tags and functions useful for this module</description>
+    <display-name>BGER Tag Library</display-name>
+    <tlib-version>1.0</tlib-version>
+    <short-name>bger</short-name>
+    <uri>http://www.bger.ch/jahia/tags/bger</uri>
+    <tag>
+        <description>
+            Get menu root for a node page
+        </description>
+        <name>getMenuRoot</name>
+        <tag-class>ch.bger.jahia.taglib.GetMenuRootTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>var</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>pageNode</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+</taglib>

@@ -1,0 +1,23 @@
+<bgermix = 'http://www.hec.edu/jahia/nt/1.0'>
+<bgernt = 'http://www.bger.ch/jahia/nt/1.0'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+
+[bgermix:bger] > jmix:droppableContent mixin
+
+[bgernt:simpleMenu] > jnt:content, bgermix:bger
+ - items (weakreference) multiple
+
+[bgernt:searchBar] > jnt:content, bgermix:bger
+
+[bgernt:languageSwitcher] > jnt:content, bgermix:bger
+
+[bgernt:topHeader] > jnt:content, bgermix:bger
+ + simpleMenu (bgernt:simpleMenu) = bgernt:simpleMenu mandatory autocreated
+ + languageSwitcher (bgernt:languageSwitcher) = bgernt:languageSwitcher mandatory autocreated
+ + searchBar (bgernt:searchBar) = bgernt:searchBar mandatory autocreated
+
+[bgernt:leftMenu] > jnt:content, bgermix:bger
+
+[bgernt:test] > bgermix:bger
+
