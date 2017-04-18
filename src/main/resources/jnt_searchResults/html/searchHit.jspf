@@ -1,4 +1,6 @@
-
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="functions" uri="http://www.jahia.org/tags/functions" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <td>
     <p><b><a href="${hit.link}">${fn:escapeXml(functions:abbreviate(hit.title, 100,120,'...'))}</a></b><br>
     ${hit.excerpt}<br>
