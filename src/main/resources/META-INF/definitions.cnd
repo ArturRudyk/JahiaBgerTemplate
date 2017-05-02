@@ -21,3 +21,14 @@
 
 [bgernt:test] > bgermix:bger
 
+[bgernt:panopticMenuPage] > jnt:content, bgermix:bger
+ - title (string) mandatory
+ - page (weakreference, picker[type='page']) mandatory
+ - photo (weakreference, picker[type='image']) mandatory
+ - excludePages (weakreference, picker[type='page']) multiple
+
+[bgernt:panopticMenu] > jnt:contentList, bgermix:bger orderable
+ + * (bgernt:panopticMenuPage)
+
+[bgernt:homeMenu] > jnt:content, bgermix:bger
+ - defaultBackground (weakreference, picker[type='image'])

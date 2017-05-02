@@ -48,8 +48,8 @@
         </div>
     </div>
     <div class="page">
-        <div class="bgimgcontainer">
-            <div class="bgimg bginit"></div>
+        <div class="bgimgcontainer" data-image="/files/default/sites/bger/files/images/de/">
+            <div id="background" class="bgimg bginit"></div>
             <!-- more images -->
             <div class="bgimg bgnew section0" style="display: none; background-image: url(&quot;bg1.jpg&quot;);"></div>
             <div class="bgimg bgnew section1" style="display: none; background-image: url(&quot;bg2.jpg&quot;);"></div>

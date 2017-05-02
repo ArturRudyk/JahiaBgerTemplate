@@ -26,6 +26,9 @@
 </head>
 
 <body>
+    <style type="text/css">
+        .bgimg{position:absolute;top:0;left:0;height:636px;width:100%;background:#fff url(/img/bg.jpg) no-repeat scroll center 0}
+    </style>
     <div class="bodywrapper">
         <a class="hiddenanchor" name="start"></a>
         <div class="head">
